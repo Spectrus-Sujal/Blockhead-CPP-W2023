@@ -80,8 +80,5 @@ protected:
 	                    int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	UBlockHeadGameInstance* GameInstance;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	ABlockHeadGameMode* GameMode;
 };

@@ -8,7 +8,6 @@
 #include "Obstacle.h"
 #include "EndPoint.h"
 #include "Kismet/GameplayStatics.h"
-#include "../Game/BlockHeadGameInstance.h"
 #include "../Game/BlockHeadGameMode.h"
 #include "../GluttonTools.h"
 
@@ -37,7 +36,6 @@ void APlayerCharacter::BeginPlay() {
 	Super::BeginPlay();
 
 	GameMode = Cast<ABlockHeadGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
-	GameInstance = CastChecked<UBlockHeadGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 
 	if (const APlayerController* PlayerController = Cast<APlayerController>(GetController())) {
 		const ULocalPlayer* LocalPlayer = PlayerController->GetLocalPlayer();
@@ -54,10 +52,6 @@ void APlayerCharacter::BeginPlay() {
 		GLUTTON_LOG("Setting up on component hit event!");
 		Cube->OnComponentHit.AddDynamic(this, &APlayerCharacter::OnHit);
 		Cube->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnBeginOverlap);
-	}
-
-	if (GameInstance) {
-		GameInstance->TestMethod();
 	}
 
 	if (GameMode) {
@@ -122,6 +116,7 @@ void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, 
 	if (OtherActor && OtherActor->IsA(AEndPoint::StaticClass())) {
 		GLUTTON_LOG("ON OVERLAP: END POINT");
 		bLevelEnded = true;
+		GameMode->LevelCompleted();
 	}
 }
 
