@@ -5,8 +5,10 @@
 
 #include "Kismet/GameplayStatics.h"
 #include "BlockHeadGameInstance.h"
+#include "Components/TextBlock.h"
 #include "../GluttonTools.h"
 #include "Blueprint/UserWidget.h"
+#include "Components/TextBlock.h"
 
 void ABlockHeadGameMode::BeginPlay() {
 	Super::BeginPlay();
@@ -53,23 +55,23 @@ void ABlockHeadGameMode::NextLevel()
 
 void ABlockHeadGameMode::GameCompleted(bool PlayerWon)
 {
-	if(PlayerWon)
-	{
-		GameInstance->SetInputMode(false);
+	GameInstance->SetInputMode(false);
 			
-		if(DefaultGameCompleteWidget != nullptr)
-		{
-			GameCompleteWidget = CreateWidget<UUserWidget>(GetWorld(), DefaultGameCompleteWidget);
+	if(DefaultGameCompleteWidget != nullptr)
+	{
+		GameCompleteWidget = CreateWidget<UUserWidget>(GetWorld(), DefaultGameCompleteWidget);
 
-			if(GameCompleteWidget)
-			{
-				GameCompleteWidget->AddToViewport();
-			}
-		}
-		else
+		if(GameCompleteWidget)
 		{
-			GLUTTON_LOG("Game Complete is Null");
+			GameCompleteWidget->AddToViewport();
+			UTextBlock* LostOrComplete = Cast<UTextBlock>(
+				GameCompleteWidget->GetWidgetFromName(FName{"LostOrComplete"}));
+			const FText WinLossMessage = PlayerWon ? FText::FromString("You Won!") : FText::FromString("You Lost!");
+			LostOrComplete->SetText(WinLossMessage);
 		}
-		
+	}
+	else
+	{
+		GLUTTON_LOG("Game Complete is Null");
 	}
 }

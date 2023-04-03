@@ -81,4 +81,6 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	ABlockHeadGameMode* GameMode;
+
+	FTimerHandle GameEndTimer;
 };

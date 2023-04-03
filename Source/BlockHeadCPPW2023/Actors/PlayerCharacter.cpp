@@ -22,6 +22,7 @@ APlayerCharacter::APlayerCharacter() {
 
 	Cube = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cube"));
 	Cube->SetSimulatePhysics(true);
+	Cube->SetNotifyRigidBodyCollision(true);
 	RootComponent = Cube;
 
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
@@ -63,6 +64,8 @@ void APlayerCharacter::PlayerDied() {
 	GLUTTON_LOG("Player Died!");
 	bLevelEnded = true;
 	Cube->SetPhysicsLinearVelocity({0, 0, 0});
+	
+	GetWorldTimerManager().SetTimer(GameEndTimer, [this]()->void {GameMode->GameCompleted(false);}, 2.0f, false);
 }
 
 // Called every frame
@@ -116,6 +119,7 @@ void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, 
 	if (OtherActor && OtherActor->IsA(AEndPoint::StaticClass())) {
 		GLUTTON_LOG("ON OVERLAP: END POINT");
 		bLevelEnded = true;
+		Cube->SetPhysicsLinearVelocity(Cube->GetPhysicsLinearVelocity() * 0.5);
 		GameMode->LevelCompleted();
 	}
 }
