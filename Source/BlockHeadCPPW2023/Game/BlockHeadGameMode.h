@@ -18,10 +18,20 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-protected:
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UBlockHeadGameInstance* GameInstance;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG")
+	TSubclassOf<UUserWidget> DefaultLevelCompleteWidget;
+
+	UPROPERTY()
+	UUserWidget* LevelCompleteWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG")
+	TSubclassOf<UUserWidget> DefaultGameCompleteWidget;
+
+	UPROPERTY()
+	UUserWidget* GameCompleteWidget;
 
 	FTimerHandle LevelSwapTimer;
 
