@@ -1,0 +1,114 @@
+[
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Actors\\EndPoint.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Actors\\EndPoint.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Actors\\Obstacle.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Actors\\Obstacle.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Actors\\PlayerCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Actors\\PlayerCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\BlockHeadCPPW2023.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\BlockHeadCPPW2023.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\BlockHeadCPPW2023.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Game\\BlockHeadGameInstance.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Game\\BlockHeadGameInstance.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Game\\BlockHeadGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\Game\\BlockHeadGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\Source\\BlockHeadCPPW2023\\GluttonTools.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default\\BlockHeadCPPW2023.255.rsp"
+		],
+		"directory": "F:\\Unreal Engine\\UE_5.1\\Engine\\Source"
+	}
+]

@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "name": "BlockHeadCPPW2023Editor Editor Win64 Development (BlockHeadCPPW2023)",
+      "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "msvc-x64",
+      "compileCommands": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_BlockHeadCPPW2023.json",
+      "includePath": [
+        "${workspaceFolder}\\Intermediate**",
+        "[Workspace Folder]\\Plugins**",
+        "[Workspace Folder]\\Source**"
+      ]
+    },
+    {
+      "name": "Win32",
+      "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "msvc-x64",
+      "compileCommands": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default.json"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,437 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "BlockHeadCPPW2023 Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Debug",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Debug",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023 Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Debug",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023 Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Development",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Development",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023 Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Development",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Test",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Test",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023 Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Test",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023 Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023 Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023Editor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023Editor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"Development",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"Development",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BlockHeadCPPW2023Editor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		},
+		{
+			"label": "BlockHeadCPPW2023Editor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"BlockHeadCPPW2023Editor",
+				"Win64",
+				"Development",
+				"C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\BlockHeadCPPW2023.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "F:\\Unreal Engine\\UE_5.1"
+			}
+		}
+	]
+}
