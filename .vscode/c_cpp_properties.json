@@ -6,12 +6,7 @@
       "cStandard": "c17",
       "cppStandard": "c++17",
       "intelliSenseMode": "msvc-x64",
-      "compileCommands": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_BlockHeadCPPW2023.json",
-      "includePath": [
-        "${workspaceFolder}\\Intermediate**",
-        "[Workspace Folder]\\Plugins**",
-        "[Workspace Folder]\\Source**"
-      ]
+      "compileCommands": "C:\\Users\\snaroia\\Documents\\GitHub\\Blockhead-CPP-W2023\\.vscode\\compileCommands_BlockHeadCPPW2023.json"
     },
     {
       "name": "Win32",
@@ -19,7 +14,7 @@
       "cStandard": "c17",
       "cppStandard": "c++17",
       "intelliSenseMode": "msvc-x64",
-      "compileCommands": "C:\\Users\\naroi\\Documents\\School\\RRC Programing\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default.json"
+      "compileCommands": "C:\\Users\\snaroia\\Documents\\GitHub\\Blockhead-CPP-W2023\\.vscode\\compileCommands_Default.json"
     }
   ],
   "version": 4

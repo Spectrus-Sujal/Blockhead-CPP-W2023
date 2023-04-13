@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "BlockHeadGameMode.h"
 
 #include "Kismet/GameplayStatics.h"
@@ -10,26 +9,35 @@
 #include "Blueprint/UserWidget.h"
 #include "Components/TextBlock.h"
 
-void ABlockHeadGameMode::BeginPlay() {
+void ABlockHeadGameMode::BeginPlay()
+{
 	Super::BeginPlay();
 
 	GameInstance = CastChecked<UBlockHeadGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 
 	GameInstance->SetInputMode(true);
-	
+
+	Test->SetPhysicsLinearVelocity(FVector(10, 10, 10));
+
+	TArray<FString> Arr;
+	for (int i = 0; i < Arr.Num(); i++)
+	{
+		Arr.RemoveAt(i);
+	}
 }
 
-void ABlockHeadGameMode::TestMethod() {
+void ABlockHeadGameMode::TestMethod()
+{
 	GLUTTON_LOG("In Game Mode.");
 }
 
 void ABlockHeadGameMode::LevelCompleted()
 {
-	if(DefaultLevelCompleteWidget != nullptr)
+	if (DefaultLevelCompleteWidget != nullptr)
 	{
 		LevelCompleteWidget = CreateWidget<UUserWidget>(GetWorld(), DefaultLevelCompleteWidget);
 
-		if(LevelCompleteWidget)
+		if (LevelCompleteWidget)
 		{
 			LevelCompleteWidget->AddToViewport();
 		}
@@ -43,11 +51,12 @@ void ABlockHeadGameMode::LevelCompleted()
 
 void ABlockHeadGameMode::NextLevel()
 {
-	if(GameInstance->IsPlayerOnFinalLevel())
+	if (GameInstance->IsPlayerOnFinalLevel())
 	{
 		LevelCompleteWidget->RemoveFromParent();
 		GameCompleted(true);
-	}else
+	}
+	else
 	{
 		GameInstance->LoadNextLevel();
 	}
@@ -56,15 +65,15 @@ void ABlockHeadGameMode::NextLevel()
 void ABlockHeadGameMode::GameCompleted(bool PlayerWon)
 {
 	GameInstance->SetInputMode(false);
-			
-	if(DefaultGameCompleteWidget != nullptr)
+
+	if (DefaultGameCompleteWidget != nullptr)
 	{
 		GameCompleteWidget = CreateWidget<UUserWidget>(GetWorld(), DefaultGameCompleteWidget);
 
-		if(GameCompleteWidget)
+		if (GameCompleteWidget)
 		{
 			GameCompleteWidget->AddToViewport();
-			UTextBlock* LostOrComplete = Cast<UTextBlock>(
+			UTextBlock *LostOrComplete = Cast<UTextBlock>(
 				GameCompleteWidget->GetWidgetFromName(FName{"LostOrComplete"}));
 			const FText WinLossMessage = PlayerWon ? FText::FromString("You Won!") : FText::FromString("You Lost!");
 			LostOrComplete->SetText(WinLossMessage);

@@ -35,6 +35,9 @@ protected:
 
 	FTimerHandle LevelSwapTimer;
 
+	UPROPERTY()
+	UStaticMeshComponent* Test;
+
 public:
 	void TestMethod();
 
